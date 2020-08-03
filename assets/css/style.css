@@ -550,7 +550,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #e6636a;
+  background: #556270;
   margin: 4px 10px;
 }
 
@@ -2170,4 +2170,106 @@ section.newsletter .overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Dictionary definition*/
+.introLayoutCenter {
+	padding: 3em;
+}
+
+.definition {
+	text-align: left;
+	margin: 0px;
+}
+
+.definition p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.syllables {
+	font-size: 2em;
+	margin: 0;
+	line-height: 1;
+}
+
+.pronunciation {
+	color: gray;
+}
+
+.synonym-heading {
+	font-style: italic;
+
+	&::after {
+		content: ":";
+	}
+}
+
+.synonym {
+	&:not(:last-child)::after {
+		content: ", ";
+	}
+}
+
+.synonym-heading,
+.synonym {
+	color: gray;
+	margin: 0;
+	display: inline;
+}
+
+.part-of-speech {
+	font-style: italic;
+}
+
+.definition-group {
+	margin-bottom: 1em;
+}
+
+.definition-item {
+	margin: 0;
+}
+
+.example {
+	color: gray;
+}
+
+section.cta {
+	position: relative;
+	padding: 75px 0;
+	background-image: url("../img/bg-cta.jpg");
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	width:100%;
+}
+
+section.cta .cta-content {
+	position: relative;
+	z-index: 1; 
+}
+
+section.cta .cta-content h2 {
+	font-size: 50px;
+	max-width: 450px;
+	margin-top: 0;
+	margin-bottom: 25px;
+	color: white; 
+}
+   
+@media (min-width: 768px) {
+	section.cta .cta-content h2 {
+		font-size: 80px;
+	} 
+}
+
+section.cta .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); 
 }
