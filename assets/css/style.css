@@ -668,7 +668,7 @@ section {
 --------------------------------------------------------------*/
 .clients {
   padding: 15px 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .clients img {
@@ -2281,4 +2281,8 @@ section.contact  {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.donate-link {
+  color: rgb(240, 139, 29) !important;
 }
